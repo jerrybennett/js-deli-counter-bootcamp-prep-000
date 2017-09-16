@@ -1,13 +1,13 @@
-function takeANumber( katzDeliLine, name ) {
-  katzDeliLine.push(name)
-  var num = katzDeliLine.length
+function takeANumber( line, name ) {
+  line.push(name)
+  var num = line.length
   return `Welcome, ${name}. You are number ${num} in line.`
 }
 
-function nowServing(katzDeliLine) {
-  if( katzDeliLine.length === 0 ) {
+function nowServing( line ) {
+  if( line.length === 0 ) {
     return "There is nobody waiting to be served!"
   } else {
-    return `Currently serving ${katzDeliLine[0]}.`
+    return `Currently serving ${line[0]}.`
   }
 }
