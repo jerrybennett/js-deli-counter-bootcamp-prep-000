@@ -16,7 +16,7 @@ function currentLine(line) {
   if( line.length === 0 ) {
     return "The line is currently empty."
   } else {
-    var saysWho = `The line is currently: ${line[0]}`
+    var saysWho = `The line is currently: ${line.indexOf(i)}. ${line[i]}`
     for ( var i = 0; i < line.length; i++ ) {
       saysWho += `, ${line.indexOf(i)}. ${line[i]}`
     }
