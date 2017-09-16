@@ -21,6 +21,6 @@ function currentLine(line) {
     while( i < line.lenghth ) {
       newLine.push(line.indexOf(i) + ". " + line[i] + ",")
     }
-    return "The line is currently: " + newLine
+    return `The line is currently: ${newLine}`
   }
 }
