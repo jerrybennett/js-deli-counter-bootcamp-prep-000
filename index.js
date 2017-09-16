@@ -18,7 +18,7 @@ function currentLine(line) {
   } else {
     for( var i = 0; i < line.length; i++ ) {
       var newLine = []
-      newLine.push((line.indexOf(i) + 2) + ". " + line[i] + ",")
+      newLine.push(line.indexOf(i) + ". " + line[i] + ",")
     }
     return "The line is currently: " + newLine
   }
