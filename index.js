@@ -18,7 +18,7 @@ function currentLine(line) {
   } else {
     var saysWho = `The line is currently: ${line[0]}`
     for (var i = 0; i < line.length; i++) {
-      
+      saysWho += `, ${i + 1}. ${line[i]}`
     }
     return saysWho
   }
